@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
+import dill
 
-preprocessor=pickle.load(open('Streamlit_App\preprocessor.pkl','rb'))
-model=pickle.load(open('Streamlit_App\model.pkl','rb'))
+preprocessor=dill.load(open('Streamlit_App\preprocessor.pkl','rb'))
+model=dill.load(open('Streamlit_App\model.pkl','rb'))
 
 df=pd.read_csv(r'Streamlit_App\raw_data.csv')
 
