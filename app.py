@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 import dill
 
-preprocessor=dill.load(open('Streamlit_App\preprocessor.pkl','rb'))
-model=dill.load(open('Streamlit_App\model.pkl','rb'))
+preprocessor=dill.load(open('preprocessor.pkl','rb'))
+model=dill.load(open('model.pkl','rb'))
 
-df=pd.read_csv(r'Streamlit_App\raw_data.csv')
+df=pd.read_csv(r'raw_data.csv')
 
 st.title("LAPTOP PRICE PREDICTOR")
 
